@@ -1,0 +1,115 @@
+:root {
+  --main-bg-color: indigo;
+  --main-font-color: white;
+  --font-family: 'Roboto Mono', monospace;
+  --blue: #2fbbff;
+  --purple: #7818dd;
+  --violet: #dd1867;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: var(--font-family);
+	color: var(--main-font-color);
+	background-color: var(--main-bg-color);
+}
+
+.section {
+	min-height: 100vh;
+}
+
+
+/*hero section*/
+.navbar {
+	padding-top: 10px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	max-width: 800px;
+}
+
+.navbar img{
+	width: 30px;
+	height: 30px;
+}
+
+.navbar div{
+	text-transform: capitalize;
+	padding: 0 5px;
+	border-right: 2px solid var(--main-font-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1 0 auto;
+}
+
+.navbar div:last-child{
+	border-right: none;
+}
+
+.hero-logo {
+	padding: 20vh 10px;
+	text-align: center;
+}
+
+.hero-logo h1 {
+	text-transform: uppercase;
+}
+
+.hero-subtitle {
+	text-align: center;
+}
+
+/*about section*/
+.mission-intro {
+	text-align: center;
+	margin: auto;
+	max-width: 360px;
+}
+
+.mission-cards {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/*cards colors*/
+.mission-card {
+	text-align: center;
+	max-width: 250px;
+	margin: 5px;
+}
+
+.mission-card-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+.mission-card-header h3{
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.mission-card-content {
+	background-color: var(--main-bg-color);
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+.mission-vr {
+	background-color: var(--blue);
+}
+
+.mission-events {
+	background-color: var(--purple);
+}
+
+.mission-consultancy {
+	background-color: var(--violet);
+}
+/*--*/

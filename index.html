@@ -7,7 +7,8 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
 		<link rel="stylesheet" href="style.css" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script> 
 
 		<!-- social meta tags -->
     <meta property="og:title" content="The Lisbon VR">
@@ -89,7 +90,7 @@
   				<div class="project-card">
   					<img src="images/placeholder-400*300.jpeg">
   					<h3>Doctor</h3>
-  					<p>This dentist's office scene was built and animated to feel natural yet powerfull. The use of spatial audio gives the final touch to make this experience feel as real as possible.</p>
+  					<p>This dentist's office scene was built and animated to feel natural yet powerful. The use of spatial audio gives the final touch to make this experience feel as real as possible.</p>
   				</div>
   				<div class="project-card">
   					<img src="images/placeholder-400*300.jpeg">
@@ -106,258 +107,279 @@
   				<p>These are some of the people that we are proud of working with.</p>
   			</div>
   			<div class="clients-logos">
-  				<img src="images/placeholder-300*300.jpeg">
-  				<img src="images/placeholder-300*300.jpeg">
-  				<img src="images/placeholder-300*300.jpeg">
-  				<img src="images/placeholder-300*300.jpeg">
+  				<div class="client-logo">
+	  				<img src="images/placeholder-300*300.jpeg">
+	  			</div>
+  				<div class="client-logo">
+  					<img src="images/placeholder-300*300.jpeg">
+	  			</div>
+  				<div class="client-logo">
+  					<img src="images/placeholder-300*300.jpeg">
+	  			</div>
+  				<div class="client-logo">
+  					<img src="images/placeholder-300*300.jpeg">
+	  			</div>
+	  			<div class="client-logo">
+  					<img src="images/placeholder-300*300.jpeg">
+	  			</div>
+	  			<div class="client-logo">
+  					<img src="images/placeholder-300*300.jpeg">
+	  			</div>
   			</div>
   		</div>
   	</div>
   	<div class="section contact">
-  		<div class="contact-header">
-  			<h2>Contacts</h2>
-  			<p>The Lisbon VR Tec Labs - Centro de Inovação Campus da FCUL, Campo Grande 1749-016 Lisboa, Portugal</p>
-  			<p>info@thelisbonvr.com</p>
-  		</div>
-  		<div class="contact-map">
-  			<div id="map" style="height: 400px; width: 100%;"></div>
-  			<script>
-  				function initMap() {
-					  var tlvr = {lat: 38.757215, lng: -9.157780};
-					  var map = new google.maps.Map(document.getElementById('map'), {
-					    zoom: 14,
-					    center: tlvr,
-					    styles: [
-							    {
-							        "featureType": "all",
-							        "elementType": "labels.text",
-							        "stylers": [
-							            {
-							                "visibility": "on"
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "all",
-							        "elementType": "labels.text.fill",
-							        "stylers": [
-							            {
-							                "color": "#ffffff"
-							            },
-							            {
-							                "visibility": "on"
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "all",
-							        "elementType": "labels.text.stroke",
-							        "stylers": [
-							            {
-							                "visibility": "on"
-							            },
-							            {
-							                "color": "#413c48"
-							            },
-							            {
-							                "weight": "3.40"
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "administrative",
-							        "elementType": "geometry.fill",
-							        "stylers": [
-							            {
-							                "color": "#6f38c7"
-							            },
-							            {
-							                "lightness": 20
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "administrative",
-							        "elementType": "geometry.stroke",
-							        "stylers": [
-							            {
-							                "color": "#392855"
-							            },
-							            {
-							                "lightness": 17
-							            },
-							            {
-							                "weight": 1.2
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "administrative.neighborhood",
-							        "elementType": "all",
-							        "stylers": [
-							            {
-							                "visibility": "on"
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "administrative.land_parcel",
-							        "elementType": "all",
-							        "stylers": [
-							            {
-							                "visibility": "on"
-							            },
-							            {
-							                "color": "#524070"
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "administrative.land_parcel",
-							        "elementType": "geometry",
-							        "stylers": [
-							            {
-							                "visibility": "on"
-							            },
-							            {
-							                "color": "#6c3db8"
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "landscape",
-							        "elementType": "geometry",
-							        "stylers": [
-							            {
-							                "lightness": "25"
-							            },
-							            {
-							                "visibility": "on"
-							            },
-							            {
-							                "color": "#b1a0cb"
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "landscape.man_made",
-							        "elementType": "all",
-							        "stylers": [
-							            {
-							                "visibility": "on"
-							            },
-							            {
-							                "color": "#8970b1"
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "poi",
-							        "elementType": "geometry",
-							        "stylers": [
-							            {
-							                "color": "#47385f"
-							            },
-							            {
-							                "lightness": 21
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "road.highway",
-							        "elementType": "geometry.fill",
-							        "stylers": [
-							            {
-							                "color": "#d6bcff"
-							            },
-							            {
-							                "lightness": 17
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "road.highway",
-							        "elementType": "geometry.stroke",
-							        "stylers": [
-							            {
-							                "color": "#000000"
-							            },
-							            {
-							                "lightness": 29
-							            },
-							            {
-							                "weight": 0.2
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "road.arterial",
-							        "elementType": "geometry",
-							        "stylers": [
-							            {
-							                "color": "#000000"
-							            },
-							            {
-							                "lightness": 18
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "road.local",
-							        "elementType": "geometry",
-							        "stylers": [
-							            {
-							                "color": "#522697"
-							            },
-							            {
-							                "lightness": 16
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "transit",
-							        "elementType": "geometry",
-							        "stylers": [
-							            {
-							                "color": "#af96d9"
-							            },
-							            {
-							                "lightness": 19
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "water",
-							        "elementType": "geometry",
-							        "stylers": [
-							            {
-							                "color": "#271a3b"
-							            },
-							            {
-							                "lightness": 17
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "water",
-							        "elementType": "geometry.fill",
-							        "stylers": [
-							            {
-							                "color": "#0f071b"
-							            }
-							        ]
-							    }
-							]
-					  });
-					  var marker = new google.maps.Marker({
-					    position: tlvr,
-					    map: map
-					  });
-					}
-  			</script>
-			  <script async defer
-			    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHPps64dDyJJB9qDOX8KBkR2ILIP_3aMM&callback=initMap">
-			  </script>
+  		<div class="contact-content">
+	  		<div class="contact-header">
+	  			<h2>Contacts</h2>
+	  			<p>The Lisbon VR - Tec Labs, Centro de Inovação<br> Campus da FCUL, Campo Grande 1749-016<br> Lisbon, Portugal</p>
+	  			<p>info@thelisbonvr.com</p>
+	  			<div class="social-icons">
+	  				<a target="_blank" to=""><i class="fab fa-instagram"></i></a>
+	  				<a target="_blank" to=""><i class="fab fa-twitter"></i></a>
+	  				<a target="_blank" to="https://www.facebook.com/thelisbonvr/"><i class="fab fa-facebook-square"></i></a>
+	  			</div>
+	  		</div>
+	  		<div class="contact-map">
+	  			<div id="map" style="height: 400px; width: 100%;"></div>
+	  			<script>
+	  				function initMap() {
+						  var tlvr = {lat: 38.757215, lng: -9.157780};
+						  var map = new google.maps.Map(document.getElementById('map'), {
+						    zoom: 14,
+						    center: tlvr,
+						    styles: [
+								    {
+								        "featureType": "all",
+								        "elementType": "labels.text",
+								        "stylers": [
+								            {
+								                "visibility": "on"
+								            }
+								        ]
+								    },
+								    {
+								        "featureType": "all",
+								        "elementType": "labels.text.fill",
+								        "stylers": [
+								            {
+								                "color": "#ffffff"
+								            },
+								            {
+								                "visibility": "on"
+								            }
+								        ]
+								    },
+								    {
+								        "featureType": "all",
+								        "elementType": "labels.text.stroke",
+								        "stylers": [
+								            {
+								                "visibility": "on"
+								            },
+								            {
+								                "color": "#413c48"
+								            },
+								            {
+								                "weight": "3.40"
+								            }
+								        ]
+								    },
+								    {
+								        "featureType": "administrative",
+								        "elementType": "geometry.fill",
+								        "stylers": [
+								            {
+								                "color": "#6f38c7"
+								            },
+								            {
+								                "lightness": 20
+								            }
+								        ]
+								    },
+								    {
+								        "featureType": "administrative",
+								        "elementType": "geometry.stroke",
+								        "stylers": [
+								            {
+								                "color": "#392855"
+								            },
+								            {
+								                "lightness": 17
+								            },
+								            {
+								                "weight": 1.2
+								            }
+								        ]
+								    },
+								    {
+								        "featureType": "administrative.neighborhood",
+								        "elementType": "all",
+								        "stylers": [
+								            {
+								                "visibility": "on"
+								            }
+								        ]
+								    },
+								    {
+								        "featureType": "administrative.land_parcel",
+								        "elementType": "all",
+								        "stylers": [
+								            {
+								                "visibility": "on"
+								            },
+								            {
+								                "color": "#524070"
+								            }
+								        ]
+								    },
+								    {
+								        "featureType": "administrative.land_parcel",
+								        "elementType": "geometry",
+								        "stylers": [
+								            {
+								                "visibility": "on"
+								            },
+								            {
+								                "color": "#6c3db8"
+								            }
+								        ]
+								    },
+								    {
+								        "featureType": "landscape",
+								        "elementType": "geometry",
+								        "stylers": [
+								            {
+								                "lightness": "25"
+								            },
+								            {
+								                "visibility": "on"
+								            },
+								            {
+								                "color": "#b1a0cb"
+								            }
+								        ]
+								    },
+								    {
+								        "featureType": "landscape.man_made",
+								        "elementType": "all",
+								        "stylers": [
+								            {
+								                "visibility": "on"
+								            },
+								            {
+								                "color": "#8970b1"
+								            }
+								        ]
+								    },
+								    {
+								        "featureType": "poi",
+								        "elementType": "geometry",
+								        "stylers": [
+								            {
+								                "color": "#47385f"
+								            },
+								            {
+								                "lightness": 21
+								            }
+								        ]
+								    },
+								    {
+								        "featureType": "road.highway",
+								        "elementType": "geometry.fill",
+								        "stylers": [
+								            {
+								                "color": "#d6bcff"
+								            },
+								            {
+								                "lightness": 17
+								            }
+								        ]
+								    },
+								    {
+								        "featureType": "road.highway",
+								        "elementType": "geometry.stroke",
+								        "stylers": [
+								            {
+								                "color": "#000000"
+								            },
+								            {
+								                "lightness": 29
+								            },
+								            {
+								                "weight": 0.2
+								            }
+								        ]
+								    },
+								    {
+								        "featureType": "road.arterial",
+								        "elementType": "geometry",
+								        "stylers": [
+								            {
+								                "color": "#000000"
+								            },
+								            {
+								                "lightness": 18
+								            }
+								        ]
+								    },
+								    {
+								        "featureType": "road.local",
+								        "elementType": "geometry",
+								        "stylers": [
+								            {
+								                "color": "#522697"
+								            },
+								            {
+								                "lightness": 16
+								            }
+								        ]
+								    },
+								    {
+								        "featureType": "transit",
+								        "elementType": "geometry",
+								        "stylers": [
+								            {
+								                "color": "#af96d9"
+								            },
+								            {
+								                "lightness": 19
+								            }
+								        ]
+								    },
+								    {
+								        "featureType": "water",
+								        "elementType": "geometry",
+								        "stylers": [
+								            {
+								                "color": "#271a3b"
+								            },
+								            {
+								                "lightness": 17
+								            }
+								        ]
+								    },
+								    {
+								        "featureType": "water",
+								        "elementType": "geometry.fill",
+								        "stylers": [
+								            {
+								                "color": "#0f071b"
+								            }
+								        ]
+								    }
+								]
+						  });
+						  var marker = new google.maps.Marker({
+						    position: tlvr,
+						    map: map
+						  });
+						}
+	  			</script>
+				  <script async defer
+				    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHPps64dDyJJB9qDOX8KBkR2ILIP_3aMM&callback=initMap">
+				  </script>
+	  		</div>
   		</div>
   	</div>
   </body>

@@ -156,20 +156,35 @@ body {
 /*--*/
 
 /*projects section*/
+.projects {
+
+}
+
 .projects-content {
+	margin: auto;
 	border-top: 4px solid var(--blue);
 	width: 90vw;
-	margin: auto;
-	padding: 60px 0;
+	min-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.projects-content h2{
+	text-align: center;
+	width: 100%;
 }
 
 .project-cards {
 	display: flex;
-	align-items: stretch;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: baseline;
 }
 
 .project-card {
-	max-width: 400px;
+	max-width: 280px;
 	margin: 10px;
 }
 
@@ -183,4 +198,61 @@ body {
 	background-image: url('images/bg-desktop-04.png');
 	background-repeat: no-repeat;
     background-position: center; 
+}
+.clients-content {
+	margin: auto;
+	border-top: 4px solid var(--purple-dark);
+	width: 90vw;
+	min-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.clients-content h2{
+	text-align: center;
+	width: 100%;
+}
+
+.clients-logos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: baseline;
+	max-width: 800px;
+}
+
+.client-logo {
+	max-width: 200px;
+	margin: 10px;
+}
+
+.client-logo img{
+	width: 100%;
+    height: auto;
+}
+
+/*contact section*/
+.contact-content {
+	border-top: 4px solid var(--blue);
+	width: 90vw;
+	margin: auto;
+}
+
+.contact-map {
+}
+
+.contact-header {
+	min-height: 500px;
+	max-width: 600px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-icons {
+	font-size: 2.2rem;
 }

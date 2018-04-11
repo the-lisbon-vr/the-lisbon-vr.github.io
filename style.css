@@ -22,6 +22,13 @@ body {
 
 .section {
 	min-height: 100vh;
+	background-size: cover;
+}
+.bar {
+	background-color: white;
+	height: 4px;
+	width: 90vw;
+	margin: auto;
 }
 
 
@@ -53,6 +60,11 @@ body {
 	border-right: none;
 }
 
+.navbar div a{
+	text-decoration: none;
+	color: white;
+}
+
 /*Banner section*/
 .hero {
 	background-image: url('images/bg-desktop-01.png');
@@ -74,7 +86,7 @@ body {
 }
 
 .hero-logo img {
-	max-width: 300px;
+	max-width: 200px;
 	width: 100%;
     height: auto;
 }
@@ -90,10 +102,14 @@ body {
     background-position: center;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.mission-bar {
+	background: linear-gradient(to right, var(--violet), rgba(1,1,1,0));
 }
 
 .mission-content {
-	border-top: 4px solid var(--purple);
 	width: 90vw;
 	margin: auto;
 	padding: 95px 0;
@@ -131,6 +147,7 @@ body {
 	align-items: center;
 	padding: 40px 20px;
 }
+
 .mission-card-header h3{
 	margin-top: 10px;
 	margin-bottom: 0;
@@ -140,6 +157,9 @@ body {
 	background-color: var(--main-bg-color);
 	padding: 5px;
 	margin-bottom: 5px;
+	min-height: 200px;
+	display: flex;
+	align-items: center;
 }
 
 .mission-vr {
@@ -157,12 +177,18 @@ body {
 
 /*projects section*/
 .projects {
+	background-image: url('images/bg-desktop-03.png');
+	background-repeat: no-repeat;
+    background-position: center;
+}
 
+.projects-bar {
+	background: linear-gradient(to right, var(--purple), rgba(1,1,1,0));
 }
 
 .projects-content {
+	padding: 60px 0;
 	margin: auto;
-	border-top: 4px solid var(--blue);
 	width: 90vw;
 	min-height: 90vh;
 	display: flex;
@@ -171,9 +197,17 @@ body {
 	justify-content: center;
 }
 
-.projects-content h2{
+.projects-header{
+	text-align: center;
+	max-width: 700px;
+}
+
+.projects-header h2{
 	text-align: center;
 	width: 100%;
+	padding-top: 0;
+	margin: 0;
+	padding-bottom: 40px;
 }
 
 .project-cards {
@@ -181,16 +215,22 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: baseline;
+	max-width: 1300px;
 }
 
 .project-card {
-	max-width: 280px;
+	max-width: 512px;
 	margin: 10px;
 }
 
 .project-card img{
 	width: 100%;
     height: auto;
+    filter: grayscale(100%);
+}
+
+.project-card img:hover {
+	filter: grayscale(0%);
 }
 
 /*clients section*/
@@ -199,9 +239,13 @@ body {
 	background-repeat: no-repeat;
     background-position: center; 
 }
+
+.clients-bar {
+	background: linear-gradient(to right, var(--blue), rgba(1,1,1,0));
+}
+
 .clients-content {
 	margin: auto;
-	border-top: 4px solid var(--purple-dark);
 	width: 90vw;
 	min-height: 90vh;
 	display: flex;
@@ -234,9 +278,12 @@ body {
 }
 
 /*contact section*/
+.contact-bar {
+	background: linear-gradient(to right, gray, rgba(1,1,1,0));
+}
+
 .contact-content {
-	border-top: 4px solid var(--blue);
-	width: 90vw;
+	width: 100%;
 	margin: auto;
 }
 

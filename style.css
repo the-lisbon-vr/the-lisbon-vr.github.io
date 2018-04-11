@@ -20,6 +20,17 @@ body {
 	background-color: var(--main-bg-color);
 }
 
+@keyframes floating {
+    0%   {
+    	padding-top: 0;
+    	padding-bottom: 20px;
+    }
+    100% {
+    	padding-top: 20px;
+    	padding-bottom: 0;
+    }
+}
+
 .section {
 	min-height: 100vh;
 	background-size: cover;
@@ -60,9 +71,8 @@ body {
 	border-right: none;
 }
 
-.navbar div a{
-	text-decoration: none;
-	color: white;
+.navbar div:hover{
+	cursor: pointer;
 }
 
 /*Banner section*/
@@ -82,7 +92,9 @@ body {
 }
 
 .hero-logo h2 {
-	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 0.85rem;
+	font-weight: 300;
 }
 
 .hero-logo img {
@@ -93,6 +105,22 @@ body {
 
 .hero-subtitle {
 	text-align: center;
+}
+.hero-subtitle h2 {
+	margin: 5px;
+}
+.hero-subtitle h3 {
+	font-weight: 300;
+	font-size: 0.8rem;
+	margin: 0;
+}
+
+#arrow-down {
+	padding: 20px;
+}
+#arrow-down:hover {
+	cursor: pointer;
+	font-size: 1.5rem;
 }
 
 /*about section*/
@@ -154,12 +182,16 @@ body {
 }
 
 .mission-card-content {
-	background-color: var(--main-bg-color);
+	font-size: 0.9rem;
 	padding: 5px;
-	margin-bottom: 5px;
-	min-height: 200px;
+	min-height: 180px;
 	display: flex;
 	align-items: center;
+}
+
+.mission-card-footer {
+	height: 5px;
+	color: white;
 }
 
 .mission-vr {
@@ -203,6 +235,7 @@ body {
 }
 
 .projects-header h2{
+	text-transform: uppercase;
 	text-align: center;
 	width: 100%;
 	padding-top: 0;
@@ -219,7 +252,7 @@ body {
 }
 
 .project-card {
-	max-width: 512px;
+	max-width: 256px;
 	margin: 10px;
 }
 
@@ -242,6 +275,10 @@ body {
 
 .clients-bar {
 	background: linear-gradient(to right, var(--blue), rgba(1,1,1,0));
+}
+
+.clients-header h2{
+	text-transform: uppercase;
 }
 
 .clients-content {
@@ -299,7 +336,32 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+.contact-header h2{
+	text-transform: uppercase;
+}
 
 .social-icons {
 	font-size: 2.2rem;
+}
+
+.social-icons a {
+	color: white;
+}
+
+.footer {
+	text-align: center;
+	padding-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer img{
+	padding: 0 5px;
+	height: 30px;
+}
+
+.footer p{
+	font-size: 0.75rem;
+	margin: 0;
 }

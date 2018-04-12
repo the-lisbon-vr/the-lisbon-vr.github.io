@@ -18,17 +18,17 @@ body {
 	font-family: var(--font-family);
 	color: var(--main-font-color);
 	background-color: var(--main-bg-color);
+	margin: 0;
 }
 
-@keyframes floating {
-    0%   {
-    	padding-top: 0;
-    	padding-bottom: 20px;
-    }
-    100% {
-    	padding-top: 20px;
-    	padding-bottom: 0;
-    }
+@media(max-width: 767px) {
+  body: {
+    margin: 0px;
+  }
+
+  .navbar {
+    padding: 10px 10px 0 10px;
+  }
 }
 
 .section {
@@ -341,6 +341,11 @@ body {
 }
 .contact-header p{
 	padding: 0 20px;
+}
+
+.contact-email {
+	padding-top: 25px;
+	font-size: 1.3rem;
 }
 
 .social-icons {

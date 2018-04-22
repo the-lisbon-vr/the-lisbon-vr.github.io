@@ -1,6 +1,6 @@
 window.onload = function() {
-	linkNavbarButtons();
 	addYearToFooter();
+	linkNavbarButtons();
 }
 
 function linkNavbarButtons() {
@@ -16,17 +16,25 @@ function linkNavbarButtons() {
 	var sectionContact = document.getElementById("contact");
 
 	// set function for each button/target pair:
-	btnMission.onclick = function() {
-		smoothScroll(sectionMission);
+	if (btnMission !== null) {
+		btnMission.onclick = function() {
+			smoothScroll(sectionMission);
+		}
 	}
-	btnProjects.onclick = function() {
-		smoothScroll(sectionProjects);
+	if (btnProjects !== null) {
+		btnProjects.onclick = function() {
+			smoothScroll(sectionProjects);
+		}
 	}
-	btnContact.onclick = function() {
-		smoothScroll(sectionContact);
+	if (btnContact !== null) {
+		btnContact.onclick = function() {
+			smoothScroll(sectionContact);
+		}
 	}
-	arrowDown.onclick = function() {
-		smoothScroll(sectionMission);
+	if (arrowDown !== null) {
+		arrowDown.onclick = function() {
+			smoothScroll(sectionMission);
+		}
 	}
 	
 }

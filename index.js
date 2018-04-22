@@ -56,3 +56,4 @@ function addYearToFooter() {
 function startCheckout() {
 	fbq('track', 'InitiateCheckout');
 }
+

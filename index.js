@@ -52,3 +52,7 @@ function addYearToFooter() {
 
 	footer.appendChild(yearNode);
 }
+
+function startCheckout() {
+	fbq('track', 'InitiateCheckout');
+}

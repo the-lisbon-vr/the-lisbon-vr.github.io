@@ -8,6 +8,8 @@
   --purple-dark: #5A2D83;
   --violet: #BD2965;
   --violet-dark: #AD177D;
+  --black-transparent: rgba(0, 0, 0, 0.4);
+  --gray-transparent: rgba(10, 10, 10, 0.4);
 }
 
 html {
@@ -324,6 +326,19 @@ body {
 	margin: auto;
 }
 
+#btn-contact-form {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: var(--black-transparent);
+	padding: 5px 30px;
+}
+
+#btn-contact-form:hover {
+	background-color: black;
+	cursor: pointer;
+}
+
 .contact-map {
 }
 
@@ -344,7 +359,7 @@ body {
 }
 
 .contact-email {
-	padding-top: 25px;
+	padding: 25px 0;
 	font-size: 1.3rem;
 }
 
@@ -377,4 +392,71 @@ body {
 .footer p{
 	font-size: 0.75rem;
 	margin: 0;
+}
+
+/*contact form page*/
+
+.contact-form {
+	min-height: 85vh;
+	max-width: 500px;
+	padding: 0 10px;
+	margin: auto;
+}
+.contact-form input, textarea {
+	border: none;
+	margin-top: 10px;
+	margin-right: 10px;
+	background-color: var(--gray-transparent);
+	color: white;
+	padding: 3px 7px;
+}
+
+.contact-form .form-title {
+	padding-bottom: 40px;
+}
+
+.contact-form .form-field {
+	padding-bottom: 30px;
+}
+
+.contact-form .input-wide {
+	/*must NOT be set to 100% because
+	it goes out of div*/
+	width: 95%;
+} 
+
+/*thanks page*/
+
+.contact-thanks {
+	min-height: 85vh;
+	margin: auto;
+	text-align: center;
+	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.thanks-logo {
+	padding: 0 10px;
+}
+
+.thanks-logo img{
+	max-width: 170px;
+	width: 100%;
+    height: auto;
+}
+
+.contact-thanks h3 {
+	text-transform: uppercase;
+}
+
+.back {
+	padding-top: 40px;
+	text-decoration: none;
+	color: white;
+}
+
+.back:hover {
+	font-weight: bold;
 }

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>The Lisbon VR</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="icon" href="images/01-icon-black-white-bg.png">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+		 <script src="index.js"></script> 
+		<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script> 
+
+		<!-- social meta tags -->
+    <meta property="og:title" content="The Lisbon VR">
+    <meta property="og:description" content="Virtual Reality">
+    <meta property="og:image" content="https://raw.githubusercontent.com/the-lisbon-vr/static-page/master/images/dive-into-virtual-reality.jpg">
+    <meta property="og:url" content="http://thelisbonvr.com">
+		<meta name="twitter:card" content="summary_large_image">
+  </head>
+  <body>
+  	<div class="section hero">
+  		<div class="hero-content">
+	  		<div class="navbar">
+	  			<img src="images/01-icon-white.png">
+	  			<div id="btn-empty"></div>
+	  		</div>
+
+	  		<div class="contact-form">
+	  			<a class="back" href="/#contact"> < Back </a>
+	  			<div class="form-title">
+	  				<h3>
+	  					Thanks for considering The Lisbon VR!
+	  				</h3>
+	  				<p>
+	  					Please fill out the form below and someone will be in touch within 24 hours.
+	  				</p>
+	  			</div>
+				<form action="https://formspree.io/info@thelisbonvr.com" method="POST">
+					<input type="hidden" name="_next" value="thanks.html" />
+					<input type="hidden" name="_subject" value="Contact | The Lisbon VR" />
+					<div class="form-field">
+						<div>Name:*</div>
+						<input class="input-wide" type="text" name="name" autofocus required>
+					</div>
+					<div class="form-field">
+						<div>Email:*</div>
+						<input class="input-wide" type="email" name="_replyto" required>
+					</div>
+					<div class="form-field">
+						<div>Phone number:*</div>
+						<input class="input-wide" type="tel" name="telNo" pattern="[0-9]+" required>
+					</div>
+					<div class="form-field">
+						<div>What's the reason for contacting us?*</div>
+						<div>
+							<div>
+							    <input type="radio" id="reasonChoice1"
+							           name="reason" value="get_a_quote"
+							           required>
+							    <label for="reasonChoice1">I'd like a quote for my project</label>
+							</div>
+							<div>
+							    <input type="radio" id="reasonChoice2"
+							           name="reason" value="something_else">
+							    <label for="reasonChoice2">Something else</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-field">
+						<div>Project type (select all that apply):</div>
+						<div>
+							<div>
+							    <input type="checkbox" id="checkDefault" name="projectType" value="desktop_Vr_App">
+							    <label for="desktop_Vr_App">Desktop VR App</label>
+							</div>
+							<div>
+							    <input type="checkbox" id="checkDefault" name="projectType" value="mobile_Vr_App">
+							    <label for="mobile_Vr_App">Mobile VR App</label>
+							</div>
+
+							<div>
+							    <input type="checkbox" id="checkDefault" name="projectType" value="360Video">
+							    <label for="360Video">360 Video</label>
+							</div>
+
+							<div>
+							    <input type="checkbox" id="checkDefault" name="projectType" value="other">
+							    <label for="other">Other</label>
+							</div>
+							<div>
+							    <input type="checkbox" id="checkDefault" name="projectType" value="i_dont_know">
+							    <label for="i_dont_know">I'm not sure</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-field">
+						<div>Tell us about your project in a few words:*</div>
+						<textarea class="input-wide" name="message" rows="8" required></textarea>
+					</div>
+					<div class="form-field">
+						<div>What is your budget (approx.)?*</div>
+						<div>
+							<div>
+							    <input type="radio" id="budgetChoice1"
+							           name="budget" value="under25"
+							           required>
+							    <label for="budgetChoice1">Under 25k</label>
+							</div>
+							<div>
+							    <input type="radio" id="budgetChoice2"
+							           name="budget" value="25to50">
+							    <label for="budgetChoice2">25k to 50k</label>
+							</div>
+							<div>
+							    <input type="radio" id="budgetChoice3"
+							           name="budget" value="50to100">
+							    <label for="budgetChoice3">50k to 100k</label>
+							</div>
+							<div>
+							    <input type="radio" id="budgetChoice3"
+							           name="budget" value="over100">
+							    <label for="budgetChoice3">100k+</label>
+							</div>
+						</div>
+					</div>
+					<input id="btn-contact-form" type="submit" value="Send">
+				</form> 	  			
+	  		</div>
+
+	  		<div class="footer">
+	  			<img src="images/01-icon-white.png">
+	  			<p>
+	  				Handmade by The Lisbon VR © <span id="footer-year"></span>
+	  			</p>
+	  		</div>
+  		</div>
+  	</div>
+  </body>
+</html>

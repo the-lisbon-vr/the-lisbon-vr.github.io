@@ -1,6 +1,7 @@
 window.onload = function() {
 	addYearToFooter();
 	linkNavbarButtons();
+	showDesktopOrMobileVideo();
 }
 
 function linkNavbarButtons() {
@@ -57,3 +58,15 @@ function startCheckout() {
 	fbq('track', 'InitiateCheckout');
 }
 
+function showDesktopOrMobileVideo() {
+	var video;
+
+	if (window.innerWidth < 767) {
+		// show mobile video if screen is small
+		video = document.getElementById("promo-mobile");
+	} else {
+		// show desktop video if screen is big
+		video = document.getElementById("promo-desktop");
+	}
+	video.style.display = "block";
+}

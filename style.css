@@ -23,7 +23,7 @@ body {
 	margin: 0;
 }
 
-@media(max-width: 767px) {
+@media screen and (max-width: 767px) {
   body: {
     margin: 0px;
   }
@@ -156,10 +156,19 @@ body {
 	text-transform: uppercase;
 }
 
+/* Youtube video embed. Videos being shown with js. */
 .mission-video {
-	text-align: center;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 }
+
+.mission-video iframe{
+	margin: auto;
+}
+
+#promo-desktop, #promo-mobile {
+	display: none;
+}
+/*----*/
 
 .mission-cards {
 	display: flex;

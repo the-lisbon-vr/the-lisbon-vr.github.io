@@ -165,7 +165,7 @@ body {
 	margin: auto;
 }
 
-#promo-desktop, #promo-mobile {
+#promo-desktop, #promo-mobile, #tap-mobile, #tap-desktop {
 	display: none;
 }
 /*----*/
@@ -262,14 +262,14 @@ body {
 .project-cards {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: baseline;
-	max-width: 1300px;
+	max-width: 560px;
 }
 
 .project-card {
-	max-width: 256px;
-	margin: 10px;
+	max-width: 270px;
+	margin: 0px auto 5px auto;
 }
 
 .project-card img{

@@ -59,14 +59,18 @@ function startCheckout() {
 }
 
 function showDesktopOrMobileVideo() {
-	var video;
+	var promoVideo;
+	var tapVideo;
 
 	if (window.innerWidth < 767) {
 		// show mobile video if screen is small
-		video = document.getElementById("promo-mobile");
+		promoVideo = document.getElementById("promo-mobile");
+		tapVideo = document.getElementById("tap-mobile");
 	} else {
 		// show desktop video if screen is big
-		video = document.getElementById("promo-desktop");
+		promoVideo = document.getElementById("promo-desktop");
+		tapVideo = document.getElementById("tap-desktop");
 	}
-	video.style.display = "block";
+	promoVideo.style.display = "block";
+	tapVideo.style.display = "block";
 }
